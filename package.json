@@ -10,7 +10,7 @@
   },
   "scripts": {
     "cli": "uv run src/dyad_app/cli/cli.py",
-    "build": "yarn rsbuild build",
+    "build": "node init && yarn rsbuild build",
     "build:dev": "NODE_ENV=development yarn rsbuild build --watch",
     "typecheck:ts": "yarn tsc --noEmit",
     "test": "npm run test:py && npm run test:e2e",
